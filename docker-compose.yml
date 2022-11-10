@@ -1,0 +1,11 @@
+version: "2.6"
+
+services:
+  node-proxy:
+    build: .
+    restart: always
+    ports:
+      - 1058:3000
+    volumes:
+      - ./.env:/.env
+     
